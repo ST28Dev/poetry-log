@@ -39,7 +39,7 @@ const sendEmail = (email,verification_id, username)=>{
                 <h1>Verify Your Account</h1>
                 <p>Dear ${username},</p>
                 <p>Welcome to PoetryLog!</p>
-                <a href="http://localhost:3000/users/verify/${verification_id}">Click here to verify your account!</a>
+                <a href="https://poetry-log.onrender.com/users/verify/${verification_id}">Click here to verify your account!</a>
                 <p>Thank you,</p>
                 <p>PoetryLog</p>
             </body>
@@ -250,7 +250,7 @@ const resetPassword = async(req,res)=>{
         id: user._id
     },secret,{expiresIn: "15m"})
 
-    const link = `http://localhost:3000/users/reset_password/${user._id}/${token}`
+    const link = `https://poetry-log.onrender.com/users/reset_password/${user._id}/${token}`
 
     const username = user.username
     sendResetEmail(email,link,username)
