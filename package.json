@@ -1,0 +1,24 @@
+{
+  "name": "poetry-log",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node backend/server.js",
+    "postbuild": "npm install --prefix frontend && npm run build --prefix frontend"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ST28Dev/poetry-log.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ST28Dev/poetry-log/issues"
+  },
+  "homepage": "https://github.com/ST28Dev/poetry-log#readme",
+  "dependencies": {
+    "dotenv": "^16.0.3"
+  }
+}
