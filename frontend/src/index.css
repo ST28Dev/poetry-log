@@ -1,0 +1,371 @@
+/* Custom fonts */
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Labrada:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Labrada:wght@700&family=Mukta:wght@500&display=swap');
+
+/* Custom fonts */
+.font_lato {
+    font-family: 'Lato', sans-serif;
+}
+
+.font_labrada {
+    font-family: 'Labrada', serif;
+}
+
+.font_mukta {
+    font-family: 'Mukta', sans-serif;
+}
+
+/*  */
+#login_heading {
+    background-color: rgba(227, 244, 244, 0.8);
+    ;
+}
+
+a {
+    color: white;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    line-height: 1.25em;
+}
+
+#profile_picture_container {
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgb(221, 237, 237);
+}
+
+/* Homepage Components */
+#profile_picture {
+    max-width: 350px;
+    max-height: 450px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    font-size: 1.25em;
+}
+
+div#result_container {
+    max-width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+div#login_main_container {
+    max-width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+div#login_container {
+    background-color: rgba(227, 244, 244, 0.8);
+}
+
+/* public poem page */
+
+div#public_poem_page {
+    background-image: url("../public/bg_public_poem_page.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+div.public_poem_container {
+    width: clamp(300px, 70%, 900px);
+    background-image: url("../public/bg_public_poem.png");
+    filter: drop-shadow(0 5px 5px black)
+}
+
+.pagination-container {
+    list-style: none;
+}
+
+/* about page */
+div.about_heading_container {
+    max-width: 90%;
+    background: linear-gradient(to right, #08090b, #9ca1b7 70%, #ecebfb);
+}
+
+div.about_heading_container.media {
+    background: linear-gradient(to right, #08090b, #9ca1b7 70%, #e2dff9);
+}
+
+div.about_heading_container h1 {
+    color: #e0ecff
+}
+
+div#media_links_container {
+    background: radial-gradient(circle, #d8b3ff, #ad8fcc, #7e6893, #3b3044);
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    gap: 10px;
+    filter: drop-shadow(0px 10px 5px rgb(110, 90, 162));
+}
+
+div#media_links_heading {
+    background-color: rgba(220, 186, 255, 0.399);
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+div.media_link {
+    cursor: pointer;
+    max-width: 60%;
+}
+
+/*about page*/
+
+div.media_link img {
+    max-width: 100%;
+    max-height: 25%;
+}
+
+div.media_link:hover {
+    animation-name: media_link_hover;
+    animation-duration: 0.25s;
+    animation-fill-mode: forwards;
+
+}
+
+#about_nav_bottom {
+    position: sticky;
+    bottom: 0px;
+}
+
+#register_container {
+    background-color: rgba(227, 244, 244, 0.8);
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+button.visibility-button>* {
+    pointer-events: none;
+}
+
+#register_gif_container {
+    max-width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#register_gif {
+    max-width: 100%;
+}
+
+#technology_used_container {
+    background-color: rgb(204, 185, 216);
+    max-width: 100%;
+}
+
+#about_page {
+    background-image: url("../public/about_page_bg.jpg");
+    background-size: cover;
+}
+
+/* Verification page */
+
+div.verification-landing-container {
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Reset Password page */
+#reset_password_input {
+    max-width: 100%;
+}
+
+/* @media (min-width: 600px) {
+    #profile_picture_container {
+        max-width: 30%;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: rgb(221, 237, 237);
+    }
+} */
+
+
+/* Poem List component */
+select.poem_list_search_input {
+    padding: 5px;
+}
+
+/* input.poem_list_search_input {
+    width: 100%;
+} */
+
+@media (min-width: 320px) and (max-width: 768px) {
+    #profile_picture_container {
+        max-width: 90%;
+    }
+}
+
+@media (min-width: 375px) and (max-width: 426px) {
+    div#login_toggle_buttons {
+        max-width: 80%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+}
+
+/* tablet 768px */
+@media (min-width: 768px) and (max-width: 1024px) {
+    #profile_picture_container {
+        max-width: 50%;
+    }
+
+    #register_container {
+        max-width: 60%;
+    }
+
+    div.verification-landing-container {
+        max-width: 90%;
+    }
+
+    div#login_main_container {
+        max-width: 70%;
+    }
+
+    /* #technology_used_container {
+        max-width: 90%;
+    } */
+
+    div#media_links_container {
+        max-width: 50%;
+    }
+
+    #reset_password_input {
+        max-width: 70%;
+    }
+
+    input[type="password"].disable-on-success {
+        max-width: 60%;
+    }
+
+    input[type="email"].reset-form-input {
+        max-width: 70%;
+    }
+
+    select.poem_list_search_input {
+        padding: 3px;
+    }
+}
+
+/* laptop 1024px */
+@media (min-width: 1024px) and (max-width: 1440px) {
+    #profile_picture_container {
+        max-width: 32%;
+    }
+
+    #register_container {
+        max-width: 50%;
+    }
+
+    div#login_main_container {
+        max-width: 60%;
+    }
+
+    div.media_link {
+        max-width: 30%;
+    }
+
+    /* #technology_used_container {
+        max-width: 85%;
+    } */
+
+    div#result_container {
+        max-width: 70%;
+    }
+
+    div#media_links_container {
+        max-width: 40%;
+    }
+
+    #reset_password_input {
+        max-width: 60%;
+    }
+
+    input[type="password"].disable-on-success {
+        max-width: 50%;
+    }
+
+    input[type="email"].reset-form-input {
+        max-width: 60%;
+    }
+
+    select.poem_list_search_input {
+        padding: 3px;
+    }
+
+}
+
+/* Anything >= 1440px */
+@media (min-width: 1440px) {
+    #profile_picture_container {
+        max-width: 25%;
+    }
+
+    #register_container {
+        max-width: 40%;
+    }
+
+    div#login_main_container {
+        max-width: 60%;
+    }
+
+    div.media_link {
+        max-width: 30%;
+    }
+
+    /* #technology_used_container {
+        max-width: 85%;
+    } */
+
+    div#media_links_container {
+        max-width: 40%;
+    }
+
+    #reset_password_input {
+        max-width: 50%;
+    }
+
+    input[type="password"].disable-on-success {
+        max-width: 40%;
+    }
+
+    input[type="email"].reset-form-input {
+        max-width: 40%;
+    }
+
+    select.poem_list_search_input {
+        padding: 3px;
+    }
+}
+
+/* @media (min-width: 600px) and (max-width: 1368px) {
+    #profile_picture_container {
+        max-width: 40%;
+    }
+} */
+
+@keyframes media_link_hover {
+    from {
+        filter: none
+    }
+
+    to {
+        filter: drop-shadow(5px 5px 5px black)
+    }
+}
