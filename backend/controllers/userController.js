@@ -178,9 +178,9 @@ const verifyUser = async (req,res)=>{
 
 
         console.log("User verified")
-        res.status(200).json({message: "User successfully verified"})
+        res.status(200).json({message: "User successfully verified. You may return to poetrylog-onrender.com/ to login with your credentials."})
     } else{
-        res.status(404).json({message: "User not found or an unexpected error has occurred"})
+        res.status(404).json({message: "User not found or an unexpected error has occurred."})
     }
 }
 
