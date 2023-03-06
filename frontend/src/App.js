@@ -13,7 +13,6 @@ import ResetPasswordUpdate from "./pages/ResetPasswordUpdate";
 import RegistrationLanding from "./pages/RegistrationLanding";
 import VerificationLanding from "./pages/VerificationLanding";
 function App() {
-  // console.log("Ok")
   return (
     <>
       <Router>
